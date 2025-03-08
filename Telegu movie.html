@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegu Movie</title>
+   
+    <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="buttonStyle.css">
+    <link rel = "stylesheet" href="menudrop.css">
+    <link rel="stylesheet" href="profileStyle.css">
+</head>
+<body>
+
+    
+        <div class="container-header">
+            <div class="header">
+                <button class="button-header home-btn"><a href="Main Page.html"><p class="movie">Home</p></a></button>
+                <button class="button-header"><a href="Movie-Page.html"><p class="movie">Movie</p></a></button>  
+                <button class="button-header"><a href="TV-show.html"><p class="movie space-btn">TV show</p></a></button>  
+                
+                
+                <div class="right-buttons">
+                    <div class="navbar">
+                        <button class="button-header" id="menuButton1">
+                            <img src="All Contents/Icon/favorite_11102110.png" class="menubox">
+                        </button>
+                        <div id="menuBox1" class="menu-box">
+                            <div class="genres1">
+                                <h4>My stuff</h4>
+                                <ul>
+                                    <li>All</li>
+                                    <li>Watchlist</li>
+                                    <li>Rentals</li>
+                                </ul>
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="navbar">
+                        <button class="button-header" id="menuButton2">
+                            <img src="All Contents/Icon/Menu-Box.jpeg" class="menubox">
+                        </button>
+                        <div id="menuBox2" class="menu-box">
+                            <div class="genres2">
+                                <h4>Genres</h4>
+                                <ul>
+                                    <li>Action and Adventure</li>
+                                    <li>Anime</li>
+                                    <li>Comedy</li>
+                                    <li>Documentary</li>
+                                    <li>Drama</li>
+                                    <li>Fantasy</li>
+                                    <li>Horror</li>
+                                    <li>Kids</li>
+                                </ul>
+                            </div>
+                            <div class="featured">
+                                <h4>Featured Collections</h4>
+                                <ul>
+                                    <li>Home Premiere</li>
+                                    <li>New Releases</li>
+                                    <li>miniTV</li>
+                                    <li>Critically Acclaimed</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                    <button class="button-header" onclick="openSearchModal()">
+                        <img src="All Contents/Icon/seaarch2.png" id="searchPanel" class="search-btn">
+                    </button>
+
+                    <!--Profile model-->
+                    <div class="profile-container" id="profileBtn">
+                        <img src="All Contents/Icon/acc1.png" class="profile-img" alt="Profile" width="40" height="40">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    
+        <!--Search Model-->
+        <div id="searchModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeSearchModal()">&times;</span>
+                <input type="text" placeholder="Search..." class="search-input" onkeyup="showHint(this.value)">
+                <div id="txtHint"></div> <!-- Container for search suggestions -->
+            </div>
+        </div>
+
+
+
+
+<!-- Overlay Background -->
+<div id="overlay" class="overlay"></div>
+
+<!-- Dropdown Menu -->
+<div id="dropdownMenu" class="dropdown-menu">
+<h3>Your Account</h3>
+<div class="menu-item">
+<img src="All Contents/Profile/seconfAcc.png" class="menu-img" alt="Sg Profile" width="20" height="20">
+<span>Another Account</span>
+</div>
+<div class="menu-item">
+<img src="All Contents/Profile/kidsimg.png" class="menu-img" alt="Kids Profile" width="20" height="20">
+<span>Kids</span>
+</div>
+<div class="menu-item">
+    <img src="All Contents/Profile/Add.png" class="menu-img" alt="Kids Profile" width="20" height="20">
+    <span>Add Account</span>
+    </div>
+<div class="menu-item">
+<span>Account & Settings</span>
+</div>
+<div class="menu-item">
+<span>Sign out</span>
+</div>
+<div class="menu-item">
+    <a href="account.html">
+    <span>
+        Account statistics
+        </span>
+    </a>
+    
+
+</div>
+</div>
+
+<!----Telegu  page-->
+<div class="container">
+    
+    <div class="scroll-container">
+        <div class="scroll-content">
+            <img src="All Contents/telegu/Main pic/1.png" class="sizingImg-sty">
+        </div>
+    </div>
+    
+</div>
+
+<!--Telegu Movie-->
+<div class="container">
+    <div class="section">
+        <h2 class="heading">Movies in Telegu</h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                        <img src="All Contents/telegu/Telegu Movie/1.png" class="img-hg-wd">
+                        <p class="movie-heading">265</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Telegu Movie/2.png" class="img-hg-wd">
+                        <p class="movie-heading">Toofan</p>
+                        
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Telegu Movie/3.png" class="img-hg-wd">
+                        <p class="movie-heading">Honeymoon Express</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Telegu Movie/4.png" class="img-hg-wd">
+                        <p class="movie-heading">Kalki</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Telegu Movie/5.png" class="img-hg-wd">
+                        <p class="movie-heading">The Family Star</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Telegu Movie/6.png" class="img-hg-wd">
+                        <p class="movie-heading">Love Story</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Telegu Movie/7.png" class="img-hg-wd">
+                        <p class="movie-heading">Banglore Days</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Telegu Movie/8.png" class="img-hg-wd">
+                        <p class="movie-heading">Arjun Reddy</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Telegu Movie/9.png" class="img-hg-wd">
+                        <p class="movie-heading">Kantara</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Telegu Movie/10.png" class="img-hg-wd">
+                        <p class="movie-heading">Sarileru Neekevvaru</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Amazon Original Series-->
+<div class="container">
+    <div class="section">
+        <h2 class="heading">Movie Dubbed in Telegu</h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                        <img src="All Contents/telegu/Movie dub in tlegu/1.png" class="img-hg-wd movie-card">
+                        <p class="movie-heading">Raayan</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Movie dub in tlegu/2.png" class="img-hg-wd">
+                        <p class="movie-heading">Chandu Champion</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Movie dub in tlegu/3.png" class="img-hg-wd">
+                        <p class="movie-heading">Land Of Bad</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Movie dub in tlegu/4.png" class="img-hg-wd">
+                        <p class="movie-heading">Jackport</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Movie dub in tlegu/5.png" class="img-hg-wd">
+                        <p class="movie-heading">Maidaan</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Movie dub in tlegu/6.png" class="img-hg-wd">
+                        <p class="movie-heading">Hereditary</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Movie dub in tlegu/7.png" class="img-hg-wd">
+                        <p class="movie-heading">One Fast Move</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Movie dub in tlegu/8.png" class="img-hg-wd">
+                        <p class="movie-heading">Dhoom: 2</p>
+                    </div> 
+                    <div class="card">
+                        <img src="All Contents/telegu/Movie dub in tlegu/9.png" class="img-hg-wd">
+                        <p class="movie-heading">Misssion Impossible Dead Reckoning</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Movie dub in tlegu/10.png" class="img-hg-wd">
+                        <p class="movie-heading">Pathan</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+ 
+<!--Dub in Hindi-->
+<div class="container">
+    <div class="section">
+        <h2 class="heading">Action And Adventure Movie</h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                       
+                       <img src="All Contents/telegu/Action and adventure/1.png" class="img-hg-wd">
+                       <p class="movie-heading">Satya</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Action and adventure/2.png" class="img-hg-wd">
+                        <p class="movie-heading">Saaho</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Action and adventure/3.png" class="img-hg-wd">
+                        <p class="movie-heading">Vimaya Viddeheya Rama</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Action and adventure/4.png" class="img-hg-wd">
+                        <p class="movie-heading">Goodachari</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Action and adventure/5.png" class="img-hg-wd">
+                        <p class="movie-heading">VIP-2</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Action and adventure/6.png" class="img-hg-wd">
+                        <p class="movie-heading">Khaleja</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Action and adventure/7.png" class="img-hg-wd">
+                        <p class="movie-heading">HIT</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Action and adventure/8.png" class="img-hg-wd">
+                        <p class="movie-heading">Gam Gam Ganesha</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Action and adventure/9.png" class="img-hg-wd">
+                        <p class="movie-heading">War</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Action and adventure/10.png" class="img-hg-wd">
+                        <p class="movie-heading">Nani's</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Romance-->
+<div class="container">
+    <div class="section">
+        <h2 class="heading">Romance Movie</h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                        <img src="All Contents/telegu/Romance Movie/1.png" class="img-hg-wd">
+                        <p class="movie-heading">Honeymoon Express</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Romance Movie/2.png" class="img-hg-wd">
+                        <p class="movie-heading">Vaarasud</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Romance Movie/3.png" class="img-hg-wd">
+                        <p class="movie-heading">Manjili</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Romance Movie/4.png" class="img-hg-wd">
+                        <p class="movie-heading">Arjun Redddy</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Romance Movie/5.png" class="img-hg-wd">
+                        <p class="movie-heading">Dear Comrade</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Romance Movie/6.png" class="img-hg-wd">
+                        <p class="movie-heading">Fidaa</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Romance Movie/7.png" class="img-hg-wd">
+                        <p class="movie-heading">Radhe Shyam</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Romance Movie/8.png" class="img-hg-wd">
+                        <p class="movie-heading">Ye Maaya Chesave</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Romance Movie/9.png" class="img-hg-wd">
+                        <p class="movie-heading">Middle Class Melodies</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Romance Movie/10.png" class="img-hg-wd">
+                        <p class="movie-heading">Chitralahari</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Original Series-->
+<div class="container">
+    <div class="section">
+        <h2 class="heading">Eros Now</h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                        <img src="All Contents/telegu/Eros/1.png" class="img-hg-wd">
+                        <p class="movie-heading">Bala Bharatam</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Eros/2.png" class="img-hg-wd">
+                        <p class="movie-heading">Dasami</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Eros/3.png" class="img-hg-wd">
+                        <p class="movie-heading">English Vinglish</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Eros/4.png" class="img-hg-wd">
+                        <p class="movie-heading">Jai Santoshi Mata</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Eros/5.png" class="img-hg-wd">
+                        <p class="movie-heading">English Pellam East Godawari Mogudu</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Eros/6.png" class="img-hg-wd">
+                        <p class="movie-heading">Nuvvu Naaku Kavali</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Eros/7.png" class="img-hg-wd">
+                        <p class="movie-heading">Abhimanyu</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Eros/8.png" class="img-hg-wd">
+                        <p class="movie-heading">Premikudu</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Eros/9.png" class="img-hg-wd">
+                        <p class="movie-heading">Rishawodu</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/Eros/10.png" class="img-hg-wd">
+                        <p class="movie-heading">April 1 Vidudala</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Crunchyroll: Most Propular-->
+<div class="container">
+    <div class="section">
+        <h2 class="heading">Top Rated Telugu on IMBD</h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                        <img src="All Contents/telegu/imbD/1.png" class="img-hg-wd">
+                        <p class="movie-heading">Sesh's</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/imbD/2.png" class="img-hg-wd">
+                        <p class="movie-heading">Musiccshop Murthy</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/imbD/3.png" class="img-hg-wd">
+                        <p class="movie-heading">Harom Hara</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/imbD/4.png" class="img-hg-wd">
+                        <p class="movie-heading">Mathu Vadalara</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/imbD/5.png" class="img-hg-wd">
+                        <p class="movie-heading">Middle Class Man</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/imbD/6.png" class="img-hg-wd">
+                        <p class="movie-heading">Agent Sai Srinivasa Athreya</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/imbD/7.png" class="img-hg-wd">
+                        <p class="movie-heading">Parrivar</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/imbD/8.png" class="img-hg-wd">
+                        <p class="movie-heading">C/O</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/imbD/9.png" class="img-hg-wd">
+                        <p class="movie-heading">Aithe</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/telegu/imbD/10.png" class="img-hg-wd">
+                        <p class="movie-heading">Minugurulu</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+<script src="Main-image.js"></script>
+<script src="search-work.js"></script>
+<script src="menudrop.js"></script>
+<script src="profile.js"></script>
+</body>
+</html>

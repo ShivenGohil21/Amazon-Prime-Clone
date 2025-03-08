@@ -1,0 +1,27 @@
+{
+    "container": {
+      "section": {
+        "heading": "Eros Now",
+        "grid": {
+          "scrollContent": {
+            "card": [
+              [
+                { "image": "/full_new_Project/Project/All Contents/Hindi Movie/Eros Now/1.png", "title": "HinduMata", "price": "₹899" },
+                { "image": "/full_new_Project/Project/All Contents/Hindi Movie/Eros Now/2.png", "title": "Modi Seson 2", "price": "₹999" },
+                { "image": "/full_new_Project/Project/All Contents/Hindi Movie/Eros Now/3.png", "title": "A Viral Wedding", "price": "₹699" },
+                { "image": "/full_new_Project/Project/All Contents/Hindi Movie/Eros Now/4.png", "title": "Love Aaj Kal", "price": "₹799" },
+                { "image": "/full_new_Project/Project/All Contents/Hindi Movie/Eros Now/5.png", "title": "Enaaya All Episode", "price": "₹1199" },
+                { "image": "/full_new_Project/Project/All Contents/Hindi Movie/Eros Now/6.png", "title": "Rockstar", "price": "₹899" },
+                { "image": "/full_new_Project/Project/All Contents/Hindi Movie/Eros Now/7.png", "title": "Thoda Adjust Please", "price": "₹599" },
+                { "image": "/full_new_Project/Project/All Contents/Hindi Movie/Eros Now/8.png", "title": "Always Kabhi Ksbhi", "price": "₹499" },
+                { "image": "/full_new_Project/Project/All Contents/Hindi Movie/Eros Now/9.png", "title": "Ajab Singh Ki Gazab Kahani", "price": "₹1099" },
+                { "image": "/full_new_Project/Project/All Contents/Hindi Movie/Eros Now/10.png", "title": "Ramleela", "price": "₹999" }
+            ]
+            
+            ]
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV show Page</title>
+   
+    <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="buttonStyle.css">
+    <link rel = "stylesheet" href="menudrop.css">
+    <link rel="stylesheet" href="profileStyle.css">
+</head>
+<body>
+
+    
+        <div class="container-header">
+            <div class="header">
+                <button class="button-header home-btn"><a href="Main Page.html"><p class="movie">Home</p></a></button>
+                <button class="button-header"><a href="Movie-Page.html"><p class="movie">Movie</p></a></button>  
+                <button class="button-header"><a href="TV-show.html"><p class="movie space-btn">TV show</p></a></button>  
+                
+                
+                <div class="right-buttons">
+                    <div class="navbar">
+                        <button class="button-header" id="menuButton">
+                            <img src="All Contents/Icon/Menu-Box.jpeg" class="menubox">
+                        </button>
+                        <div id="menuBox" class="menu-box">
+                            <div class="genres">
+                                <h4>Genres</h4>
+                                <ul>
+                                    <li>Action and Adventure</li>
+                                    <li>Anime</li>
+                                    <li>Comedy</li>
+                                    <li>Documentary</li>
+                                    <li>Drama</li>
+                                    <li>Fantasy</li>
+                                    <li>Horror</li>
+                                    <li>Kids</li>
+                                </ul>
+                            </div>
+                            <div class="featured">
+                                <h4>Featured Collections</h4>
+                                <ul>
+                                    <li>Home Premiere</li>
+                                    <li>New Releases</li>
+                                    <li>miniTV</li>
+                                    <li>Critically Acclaimed</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                    <button class="button-header" onclick="openSearchModal()">
+                        <img src="All Contents/Icon/seaarch2.png" id="searchPanel" class="search-btn">
+                    </button>
+
+                    <div class="profile-container" id="profileBtn">
+                        <img src="All Contents/Icon/acc1.png" class="profile-img" alt="Profile" width="40" height="40">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    
+        <!--Search Model-->
+        <div id="searchModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeSearchModal()">&times;</span>
+                <input type="text" placeholder="Search..." class="search-input" onkeyup="showHint(this.value)">
+                <div id="txtHint"></div> <!-- Container for search suggestions -->
+            </div>
+        </div>
+
+
+<!--Profile model-->
+
+<!-- Overlay Background -->
+<div id="overlay" class="overlay"></div>
+
+<!-- Dropdown Menu -->
+<div id="dropdownMenu" class="dropdown-menu">
+<h3>Your Account</h3>
+<div class="menu-item">
+<img src="All Contents/Profile/seconfAcc.png" class="menu-img" alt="Sg Profile" width="20" height="20">
+<span>Another Account</span>
+</div>
+<div class="menu-item">
+<img src="All Contents/Profile/kidsimg.png" class="menu-img" alt="Kids Profile" width="20" height="20">
+<span>Kids</span>
+</div>
+<div class="menu-item">
+    <img src="All Contents/Profile/Add.png" class="menu-img" alt="Kids Profile" width="20" height="20">
+    <span>Add Account</span>
+    </div>
+<div class="menu-item">
+<span>Account & Settings</span>
+</div>
+<div class="menu-item">
+<span>Sign out</span>
+</div>
+<div class="menu-item">
+    <a href="account.html">
+    <span>
+        Account statistics
+        </span>
+    </a>
+    
+
+</div>
+</div>
+
+<!--Main starting page-->
+<div class="container">
+    <button class="scroll-button left" onclick="changeImage(-1)">&#10094;</button>
+    <div class="scroll-container">
+        <div class="scroll-content">
+            <img src="All Contents/T v show img/Main-img/1.png" class="sizingImg-sty">
+            <img src="All Contents/T v show img/Main-img/2.png" class="sizingImg-sty">
+            <img src="All Contents/T v show img/Main-img/3.png" class="sizingImg-sty">
+            <img src="All Contents/T v show img/Main-img/44.png" class="sizingImg-sty">
+            <img src="All Contents/T v show img/Main-img/5.png" class="sizingImg-sty">
+        </div>
+    </div>
+    <button class="scroll-button right" onclick="changeImage(1)">&#10095;</button>
+</div>
+
+<!--TV Shoes-->
+<div class="container">
+    <div class="section">
+        <h2 class="heading">Filmfare OTT Award Winners</h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                        <img src="All Contents/T v show img/you like/1.png" class="img-hg-wd">
+                        <p class="movie-heading">The Boys</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/T v show img/you like/2.png" class="img-hg-wd">
+                        <p class="movie-heading">Batman caped Crusader</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/T v show img/you like/3.png" class="img-hg-wd">
+                        <p class="movie-heading">Flash</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/T v show img/you like/4.png" class="img-hg-wd">
+                        <p class="movie-heading">Gen V</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/T v show img/you like/5.png" class="img-hg-wd">
+                        <p class="movie-heading">Desperate Housewives</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/T v show img/you like/6.png" class="img-hg-wd">
+                        <p class="movie-heading">Best Of Aib</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/T v show img/you like/7.png" class="img-hg-wd">
+                        <p class="movie-heading">Flames</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/T v show img/you like/8.png" class="img-hg-wd">
+                        <p class="movie-heading">Rasbari</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/T v show img/you like/9.png" class="img-hg-wd">
+                        <p class="movie-heading">Jee Karda</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/T v show img/you like/10.png" class="img-hg-wd">
+
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Mini Tv Series-->
+<div class="container">
+    <div class="section">
+        <h2 class="heading">Mini Tv</h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                        <img src="All Contents/Mini TV IMG/1.png" class="img-hg-wd movie-card">
+                        <p class="movie-heading">Yea Meri Family</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mini TV IMG/2.png" class="img-hg-wd">
+                        <p class="movie-heading">Jamnapaar</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mini TV IMG/3.png" class="img-hg-wd">
+                        <p class="movie-heading">Namak Namak Nishan</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mini TV IMG/4.png" class="img-hg-wd">
+                        <p class="movie-heading">Highway Love</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mini TV IMG/5.png" class="img-hg-wd">
+                        <p class="movie-heading">Sisterhood</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mini TV IMG/6.png" class="img-hg-wd">
+                        <p class="movie-heading">The Adventure Of LLEO </p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mini TV IMG/7.png" class="img-hg-wd">
+                        <p class="movie-heading">Chacha Vidhayak Hai Humare</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mini TV IMG/8.png" class="img-hg-wd">
+                        <p class="movie-heading">Half CA</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mini TV IMG/9.png" class="img-hg-wd">
+                        <p class="movie-heading">Huatler</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mini TV IMG/10.png" class="img-hg-wd">
+                        <p class="movie-heading">Hack Crimes Online</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+ 
+<!--Watch your Own Language-->
+<div class="container">
+    <div class="section">
+        <h2 class="heading">Throwbacks Tv</h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                        <img src="All Contents/Throwback tv/1.png" class="img-hg-wd">
+                        <p class="movie-heading">Pokemon Indigo League</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Throwback tv/2.png" class="img-hg-wd">
+                        <p class="movie-heading">Mr Bean</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Throwback tv/3.png" class="img-hg-wd">
+                        <p class="movie-heading">Tenali raman</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Throwback tv/4.png" class="img-hg-wd">
+                        <p class="movie-heading">Bob The Builder</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Throwback tv/5.png" class="img-hg-wd">
+                        <p class="movie-heading">Shaktiman</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Throwback tv/6.png" class="img-hg-wd">
+                        <p class="movie-heading">Classic Popeye</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Throwback tv/7.png" class="img-hg-wd">
+                        <p class="movie-heading">The Walking Dead</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Throwback tv/8.png" class="img-hg-wd">
+                        <p class="movie-heading">Everybody Loves Raymond</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Throwback tv/9.png" class="img-hg-wd">
+                        <p class="movie-heading">Cold Case</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Throwback tv/10.png" class="img-hg-wd">
+                        <p class="movie-heading">The Handmaid's Tale</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Toprated Movies-->
+<div class="container">
+    <div class="section">
+        <h2 class="heading">Top-rated Tv shows on IMBD</h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                        <img src="All Contents/T v show img/Top Rated/1.png" class="img-hg-wd">
+                        <p class="movie-heading"> Young Sheldon</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/T v show img/Top Rated/2.png" class="img-hg-wd">
+                        <p class="movie-heading">The Test</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/T v show img/Top Rated/3.png" class="img-hg-wd">
+                        <p class="movie-heading">Fallout</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/T v show img/Top Rated/4.png" class="img-hg-wd">
+                        <p class="movie-heading">Comicstaan</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/T v show img/Top Rated/5.png" class="img-hg-wd">
+                        <p class="movie-heading">Sherlock</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/T v show img/Top Rated/6.png" class="img-hg-wd">
+                        <p class="movie-heading">Suits</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/T v show img/Top Rated/7.png" class="img-hg-wd">
+                        <p class="movie-heading">Legacies</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/T v show img/Top Rated/8.png" class="img-hg-wd">
+                        <p class="movie-heading">The Boarding School</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/T v show img/Top Rated/9.png" class="img-hg-wd">
+                        <p class="movie-heading">The Good Doctor</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/T v show img/Top Rated/10-img.png"class="img-hg-wd">
+                        <p class="movie-heading">From</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Original Series-->
+<div class="container">
+    <div class="section">
+        <h2 class="heading">Original Series</h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                        <img src="All Contents/Original series/1-img.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Original series/2-img.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Original series/3-img.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Original series/4-img.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Original series/5-img.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Original series/6-img.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Original series/7-img.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Original series/8-img.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Original series/9-img.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Original series/10-img.png" class="img-hg-wd">
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Crunchyroll: Most Propular-->
+<div class="container">
+    <div class="section">
+        <h2 class="heading">Mysters and Thrillers</h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                        <img src="All Contents/Mystry and Trillers/1-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Pushpa</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mystry and Trillers/2-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Bhagaam Bhag</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mystry and Trillers/3-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Nayak</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mystry and Trillers/4-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Tiger 3</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mystry and Trillers/5-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Awara paagal deewana</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mystry and Trillers/6-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Ghajini</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mystry and Trillers/7-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Case Of Kondana</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mystry and Trillers/8-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Raazi</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mystry and Trillers/9-img.png" class="img-hg-wd">
+                        <p class="movie-heading">KGF Ch:2</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mystry and Trillers/10-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Pathan</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+<script src="Main-image.js"></script>
+<script src="search-work.js"></script>
+<script src="menudrop.js"></script>
+<script src="profile.js"></script>
+</body>
+</html>

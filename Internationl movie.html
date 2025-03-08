@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internationl Movie</title>
+   
+    <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="buttonStyle.css">
+    <link rel = "stylesheet" href="menudrop.css">
+    <link rel="stylesheet" href="profileStyle.css">
+</head>
+<body>
+
+    
+        <div class="container-header">
+            <div class="header">
+                <button class="button-header home-btn"><a href="Main Page.html"><p class="movie">Home</p></a></button>
+                <button class="button-header"><a href="Movie-Page.html"><p class="movie">Movie</p></a></button>  
+                <button class="button-header"><a href="TV-show.html"><p class="movie space-btn">TV show</p></a></button>  
+                
+                
+                <div class="right-buttons">
+                    <div class="navbar">
+                        <button class="button-header" id="menuButton1">
+                            <img src="All Contents/Icon/favorite_11102110.png" class="menubox">
+                        </button>
+                        <div id="menuBox1" class="menu-box">
+                            <div class="genres1">
+                                <h4>My stuff</h4>
+                                <ul>
+                                    <li>All</li>
+                                    <li>Watchlist</li>
+                                    <li>Rentals</li>
+                                </ul>
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="navbar">
+                        <button class="button-header" id="menuButton2">
+                            <img src="All Contents/Icon/Menu-Box.jpeg" class="menubox">
+                        </button>
+                        <div id="menuBox2" class="menu-box">
+                            <div class="genres2">
+                                <h4>Genres</h4>
+                                <ul>
+                                    <li>Action and Adventure</li>
+                                    <li>Anime</li>
+                                    <li>Comedy</li>
+                                    <li>Documentary</li>
+                                    <li>Drama</li>
+                                    <li>Fantasy</li>
+                                    <li>Horror</li>
+                                    <li>Kids</li>
+                                </ul>
+                            </div>
+                            <div class="featured">
+                                <h4>Featured Collections</h4>
+                                <ul>
+                                    <li>Home Premiere</li>
+                                    <li>New Releases</li>
+                                    <li>miniTV</li>
+                                    <li>Critically Acclaimed</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                    <button class="button-header" onclick="openSearchModal()">
+                        <img src="All Contents/Icon/seaarch2.png" id="searchPanel" class="search-btn">
+                    </button>
+
+                    <!--Profile model-->
+                    <div class="profile-container" id="profileBtn">
+                        <img src="All Contents/Icon/acc1.png" class="profile-img" alt="Profile" width="40" height="40">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    
+        <!--Search Model-->
+        <div id="searchModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeSearchModal()">&times;</span>
+                <input type="text" placeholder="Search..." class="search-input" onkeyup="showHint(this.value)">
+                <div id="txtHint"></div> <!-- Container for search suggestions -->
+            </div>
+        </div>
+
+
+
+
+<!-- Overlay Background -->
+<div id="overlay" class="overlay"></div>
+
+<!-- Dropdown Menu -->
+<div id="dropdownMenu" class="dropdown-menu">
+<h3>Your Account</h3>
+<div class="menu-item">
+<img src="All Contents/Profile/seconfAcc.png" class="menu-img" alt="Sg Profile" width="20" height="20">
+<span>Another Account</span>
+</div>
+<div class="menu-item">
+<img src="All Contents/Profile/kidsimg.png" class="menu-img" alt="Kids Profile" width="20" height="20">
+<span>Kids</span>
+</div>
+<div class="menu-item">
+    <img src="All Contents/Profile/Add.png" class="menu-img" alt="Kids Profile" width="20" height="20">
+    <span>Add Account</span>
+    </div>
+<div class="menu-item">
+<span>Account & Settings</span>
+</div>
+<div class="menu-item">
+<span>Sign out</span>
+</div>
+<div class="menu-item">
+    <a href="account.html">
+    <span>
+        Account statistics
+        </span>
+    </a>
+    
+
+</div>
+</div>
+
+<!--Main starting page-->
+<div class="container">
+    
+    <div class="scroll-container">
+        <div class="scroll-content">
+            <img src="All Contents/International images/img/1.png" class="sizingImg-sty">
+        </div>
+    </div>
+    
+</div>
+
+<!--Hindi Movie-->
+<div class="container">
+    <div class="section">
+        <h2 class="heading">Best of World Cinema </h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                        <img src="All Contents/International images/s/1.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/s/2.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/s/3.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/s/4.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/s/5.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/s/6.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/s/7.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/s/8.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/s/9.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/s/10.png" class="img-hg-wd">
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Amazon Original Series-->
+<div class="container">
+    <div class="section">
+        <h2 class="heading">Koran Dramas</h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                        <img src="All Contents/International images/K drama/1.png" class="img-hg-wd movie-card">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/K drama/2.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/K drama/3.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/K drama/4.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/K drama/5.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/K drama/6.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/K drama/7.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/K drama/8.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/K drama/9.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/K drama/10.png" class="img-hg-wd">
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+ 
+<!--Dub in Hindi-->
+<div class="container">
+    <div class="section">
+        <h2 class="heading">Spanish Movie</h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                       
+                       <img src="All Contents/International images/Spanish movie/1.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/Spanish movie/2.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/Spanish movie/3.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/Spanish movie/4.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/Spanish movie/5.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/Spanish movie/6.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/Spanish movie/7.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/Spanish movie/8.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/Spanish movie/9.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/Spanish movie/10.png" class="img-hg-wd">
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Original Series-->
+<div class="container">
+    <div class="section">
+        <h2 class="heading">Italian Movies</h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                        <img src="All Contents/International images/Itaian/1.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/Itaian/2.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/Itaian/3.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/Itaian/4.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/Itaian/5.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/Itaian/6.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/Itaian/7.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/Itaian/8.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/Itaian/9.png" class="img-hg-wd">
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/International images/Itaian/10.png" class="img-hg-wd">
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="Main-image.js"></script>
+<script src="search-work.js"></script>
+<script src="menudrop.js"></script>
+<script src="profile.js"></script>
+</body>
+</html>

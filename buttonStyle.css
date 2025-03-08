@@ -1,0 +1,45 @@
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(3, 3, 3, 0.5); /* Black background with transparency */
+}
+
+.modal-content {
+    background-color: rgb(41, 41, 41);
+    margin: 20% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: none;
+    width: 40%; /* Could be more or less, depending on screen size */
+    position: relative;
+    border-radius: 8px;
+}
+
+.close {
+    color: #f9f5f5;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.close:hover,.close:focus {
+    color: rgb(249, 244, 244);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.search-input {
+    width: 100%;
+    padding: 4px; 
+    margin-top: 10px;
+    background-color: rgb(53, 53, 53);
+    border-radius: 9px;
+    border-color:white;
+    margin-right: 10px;
+   
+}

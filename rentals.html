@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Collection</title>
+    <link rel="stylesheet" href="mainStyle.css">
+</head>
+<body>
+    <h1>Movies</h1>
+    <div id="movie-list"></div>
+
+    <script>
+        // Sample JSON data
+        const movies = [
+            { "image": "/full_new_Project/Project/All Contents/Hindi Movie/Eros Now/10.png", "title": "HinduMata", "price": "₹899" },
+            { "image": "/full_new_Project/Project/All Contents/Hindi Movie/Eros Now/2.png", "title": "Modi Seson 2", "price": "₹999" },
+            { "image": "/full_new_Project/Project/All Contents/Hindi Movie/Eros Now/3.png", "title": "A Viral Wedding", "price": "₹699" },
+            { "image": "/full_new_Project/Project/All Contents/Hindi Movie/Eros Now/4.png", "title": "Love Aaj Kal", "price": "₹799" },
+            { "image": "/full_new_Project/Project/All Contents/Hindi Movie/Eros Now/5.png", "title": "Enaaya All Episode", "price": "₹1199" },
+            { "image": "/full_new_Project/Project/All Contents/Hindi Movie/Eros Now/6.png", "title": "Rockstar", "price": "₹899" },
+            { "image": "/full_new_Project/Project/All Contents/Hindi Movie/Eros Now/7.png", "title": "Thoda Adjust Please", "price": "₹599" },
+            { "image": "/full_new_Project/Project/All Contents/Hindi Movie/Eros Now/8.png", "title": "Always Kabhi Ksbhi", "price": "₹499" },
+            { "image": "/full_new_Project/Project/All Contents/Hindi Movie/Eros Now/9.png", "title": "Ajab Singh Ki Gazab Kahani", "price": "₹1099" },
+            { "image": "/full_new_Project/Project/All Contents/Hindi Movie/Eros Now/10.png", "title": "Ramleela", "price": "₹999" }
+        ];
+
+        // Displaying the movie details
+        const movieList = document.getElementById("movie-list");
+        movies.forEach(movie => {
+            const div = document.createElement("div");
+            div.innerHTML = `
+                <img src="${movie.image}" alt="${movie.title}" width="200">
+                <h3>${movie.title}</h3>
+                <p>Price: ${movie.price}</p>
+            `;
+            movieList.appendChild(div);
+        });
+    </script>
+</body>
+</html>

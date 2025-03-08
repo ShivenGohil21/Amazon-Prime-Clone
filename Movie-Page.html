@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+   
+    <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="buttonStyle.css">
+    <link rel = "stylesheet" href="menudrop.css">
+    <link rel="stylesheet" href="profileStyle.css">
+    
+</head>
+<body>
+
+    
+        <div class="container-header">
+            <div class="header">
+                <button class="button-header home-btn"><a href="Main Page.html"><p class="movie">Home</p></a></button>
+                <button class="button-header"><a href="Movie-Page.html"><p class="movie">Movie</p></a></button>  
+                <button class="button-header"><a href="TV-show.html"><p class="movie space-btn">TV show</p></a></button>  
+                
+                
+                <div class="right-buttons">
+
+                    <div class="navbar">
+                        <button class="button-header" id="menuButton1">
+                            <img src="All Contents/Icon/favorite_11102110.png" class="menubox">
+                        </button>
+                        <div id="menuBox1" class="menu-box">
+                            <div class="genres1">
+                                <h4>My stuff</h4>
+                                <ul>
+                                    <li>All</li>
+                                    <li>Watchlist</li>
+                                    <li>Rentals</li>
+                                </ul>
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="navbar">
+                        <button class="button-header" id="menuButton2">
+                            <img src="All Contents/Icon/Menu-Box.jpeg" class="menubox">
+                        </button>
+                        <div id="menuBox2" class="menu-box">
+                            <div class="genres2">
+                                <h4>Genres</h4>
+                                <ul>
+                                    <li>Action and Adventure</li>
+                                    <li>Anime</li>
+                                    <li>Comedy</li>
+                                    <li>Documentary</li>
+                                    <li>Drama</li>
+                                    <li>Fantasy</li>
+                                    <li>Horror</li>
+                                    <li>Kids</li>
+                                </ul>
+                            </div>
+                            <div class="featured">
+                                <h4>Featured Collections</h4>
+                                <ul>
+                                    <li>Home Premiere</li>
+                                    <li>New Releases</li>
+                                    <li>miniTV</li>
+                                    <li>Critically Acclaimed</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                    <button class="button-header" onclick="openSearchModal()">
+                        <img src="All Contents/Icon/seaarch2.png" id="searchPanel" class="search-btn">
+                    </button>
+
+                    <div class="profile-container" id="profileBtn">
+                        <img src="All Contents/Icon/acc1.png" class="profile-img" alt="Profile" width="40" height="40">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    
+        <!--Search Model-->
+        <div id="searchModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeSearchModal()">&times;</span>
+                <input type="text" placeholder="Search..." class="search-input" onkeyup="showHint(this.value)">
+                <div id="txtHint"></div> <!-- Container for search suggestions -->
+            </div>
+        </div>
+
+
+<!--  Profile Model
+         Overlay Background -->
+<div id="overlay" class="overlay"></div>
+
+<!-- Dropdown Menu -->
+<div id="dropdownMenu" class="dropdown-menu">
+<h3>Your Account</h3>
+<div class="menu-item">
+<img src="All Contents/Profile/seconfAcc.png" class="menu-img" alt="Sg Profile" width="20" height="20">
+<span>Another Account</span>
+</div>
+<div class="menu-item">
+<img src="All Contents/Profile/kidsimg.png" class="menu-img" alt="Kids Profile" width="20" height="20">
+<span>Kids</span>
+</div>
+<div class="menu-item">
+    <img src="All Contents/Profile/Add.png" class="menu-img" alt="Kids Profile" width="20" height="20">
+    <span>Add Account</span>
+    </div>
+
+<div class="menu-item">
+<span>Account & Settings</span>
+</div>
+
+<div class="menu-item">
+<span>Sign out</span>
+</div>
+
+<div class="menu-item">
+    <a href="account.html">
+    <span>
+        Account statistics
+        </span>
+    </a>
+    
+
+</div>
+</div>
+
+
+
+   
+
+<!--Main starting page-->
+<div class="container">
+    <button class="scroll-button left" onclick="changeImage(-1)">&#10094;</button>
+    <div class="scroll-container">
+        <div class="scroll-content">
+            <img src="All Contents/Main Pa/Main-Page-1.png" class="sizingImg-sty">
+            <img src="All Contents/Main Pa/Main-Page-2.png" class="sizingImg-sty">
+            <img src="All Contents/Main Pa/Main-Page-3.png" class="sizingImg-sty">
+            <img src="All Contents/Main Pa/Main-Page-4.png" class="sizingImg-sty">
+            <img src="All Contents/Main Pa/Main-Page-8.png" class="sizingImg-sty">
+        </div>
+    </div>
+    <button class="scroll-button right" onclick="changeImage(1)">&#10095;</button>
+</div>
+
+<!--recomended Movie-->
+<div class="container" >
+    <div class="section">
+        <h2 class="heading">Recomended Movies</h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                         
+                        <img src="All Contents/Main Pictures/MP.png" class="img-hg-wd" >
+                        <p class="movie-heading">Mirzapur</p>
+                        
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Main Pictures/2nd-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Matxon Hall </p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Main Pictures/3-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Kya Kool Hai hum</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Main Pictures/4-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Made In Heaven</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Main Pictures/5-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Farzi</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Main Pictures/6-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Hostel Daze</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Main Pictures/7-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Yodha</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Main Pictures/8-img.png" class="img-hg-wd">
+                        <p class="movie-heading">How to Wait Billy Walish</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Main Pictures/9-img.png" class="img-hg-wd">
+                        <p class="movie-heading">The Family Man</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Main Pictures/10-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Flames</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Comedy Movies-->
+<div class="container">
+    <div class="section">
+        <h2 class="heading">Comedy Movies</h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                        <img src="All Contents/Comedy Movie/1-img.png" class="img-hg-wd movie-card">
+                        <p class="movie-heading">Friends With Benefits</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Comedy Movie/2-img.png" class="img-hg-wd">
+                        <p class="movie-heading">The Ministry Of Ungerntlemanly Warfare</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Comedy Movie/3-img.png" class="img-hg-wd">
+                        <p class="movie-heading">My Spy The Eternal City</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Comedy Movie/4-img.png" class="img-hg-wd">
+                        <p class="movie-heading">The Dirty Picture</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Comedy Movie/5-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Ki & Ka</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Comedy Movie/6-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Heyy Babby</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Comedy Movie/7-img.png" class="img-hg-wd">
+                        <p class="movie-heading"> Break Ke Baad </p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Comedy Movie/8-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Eurotrip </p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Comedy Movie/9-img.png" class="img-hg-wd">
+                         <p class="movie-heading">Mere Brother Ki Dulhan </p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Comedy Movie/10-img.png" class="img-hg-wd">
+                         <p class="movie-heading">I,Me Aur Mai </p>
+                    </div>
+                </div>
+                    
+                    
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+ 
+<!--Watch your Own Language-->
+<div class="container">
+    <div class="section">
+        <h2 class="heading">Romance Movies</h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                        <img src="All Contents/Romace movie/1-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Middle Class Love</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Romace movie/3-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Student Of the Year 2</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Romace movie/2-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Mohabbatein</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Romace movie/4-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Break Ke Baad</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Romace movie/5-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Action Replay</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Romace movie/6-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Waqt</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Romace movie/7-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Band Baaja Baaraat</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Romace movie/8-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Aisha</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Romace movie/9-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Love Ni Bhavai</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Romace movie/10-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Besharam</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Movies in hindi-->
+<div class="container">
+    <div class="section">
+        <h2 class="heading"> Movies in Hindi</h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                        <img src="All Contents/Movie in Hindi/1-img.png" class="img-hg-wd" style="cursor: pointer;" onclick="openVideoPage()">
+                        <p class="movie-heading">Stree</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Movie in Hindi/2-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Kooki</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Movie in Hindi/3-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Auron Mein Kahan Dum Tha</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Movie in Hindi/4-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Bad Newz</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Movie in Hindi/5-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Chandu Champion</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Movie in Hindi/6-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Rocky Aur Rani ke Prem Kahani</p>
+                        
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Movie in Hindi/7-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Singham</p>
+                        
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Movie in Hindi/8-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Middle Class Love</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Movie in Hindi/9-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Ready</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Movie in Hindi/10-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Maidaan</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Original Series-->
+<div class="container">
+    <div class="section">
+        <h2 class="heading">Mysters and Thrillers</h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                        <img src="All Contents/Mystry and Trillers/1-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Pushpa</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mystry and Trillers/2-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Bhagaam Bhag</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mystry and Trillers/3-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Nayak</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mystry and Trillers/4-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Tiger 3</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mystry and Trillers/5-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Awara paagal deewana</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mystry and Trillers/6-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Ghajini</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mystry and Trillers/7-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Case Of Kondana</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mystry and Trillers/8-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Raazi</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mystry and Trillers/9-img.png" class="img-hg-wd">
+                        <p class="movie-heading">KGF Ch:2</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Mystry and Trillers/10-img.png" class="img-hg-wd">
+                        <p class="movie-heading">Pathan</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Horrors-->
+<div class="container">
+    <div class="section">
+        <h2 class="heading">Horrors</h2>
+        <div class="grid">
+            <div class="Overflow">
+                <div class="scroll-content">
+                    <div class="card">
+                        <img src="All Contents/Horror/1.png" class="img-hg-wd">
+                        <p class="movie-heading">Golmaal Again </p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Horror/2.png" class="img-hg-wd">
+                        <p class="movie-heading">It</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Horror/3.png" class="img-hg-wd">
+                        <p class="movie-heading">Vampire Academy</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Horror/4.png" class="img-hg-wd">
+                        <p class="movie-heading">Bhoot</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Horror/5.png" class="img-hg-wd">
+                        <p class="movie-heading">Psicopata American</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Horror/6.png" class="img-hg-wd">
+                        <p class="movie-heading">Annabella Creation</p> 
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Horror/7.png" class="img-hg-wd">
+                        <p class="movie-heading">Imaginary</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Horror/8.png" class="img-hg-wd">
+                        <p class="movie-heading">Talk To Me</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Horror/9.png" class="img-hg-wd">
+                        <p class="movie-heading">1920</p>
+                    </div>
+                    <div class="card">
+                        <img src="All Contents/Horror/10.png" class="img-hg-wd">
+                        <p class="movie-heading">Annabella Comes Home</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="Main-image.js"></script>
+<script src="search-work.js"></script>
+<script src="menudrop.js"></script>
+<script src="profile.js"></script>
+<script src="movieShowing.js"></script>
+</body>
+</html>

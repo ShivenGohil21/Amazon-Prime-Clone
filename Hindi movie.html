@@ -1,0 +1,462 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hindi Movie</title>
+    
+        <link rel="stylesheet" href="mainStyle.css">
+        <link rel="stylesheet" href="buttonStyle.css">
+        <link rel = "stylesheet" href="menudrop.css">
+        <link rel="stylesheet" href="profileStyle.css">
+    </head>
+    <body>
+
+        
+            <div class="container-header">
+                <div class="header">
+                    <button class="button-header home-btn"><a href="Main Page.html"><p class="movie">Home</p></a></button>
+                    <button class="button-header"><a href="Movie-Page.html"><p class="movie">Movie</p></a></button>  
+                    <button class="button-header"><a href="TV-show.html"><p class="movie space-btn">TV show</p></a></button>  
+                    
+                    
+                    <div class="right-buttons">
+                        <div class="navbar">
+                            <button class="button-header" id="menuButton1">
+                                <img src="All Contents/Icon/favorite_11102110.png" class="menubox">
+                            </button>
+                            <div id="menuBox1" class="menu-box">
+                                <div class="genres1">
+                                    <h4>My stuff</h4>
+                                    <ul>
+                                        <li>All</li>
+                                        <li>Watchlist</li>
+                                        <li>Rentals</li>
+                                    </ul>
+                                </div>
+                                </div>
+                        </div>
+
+                        <div class="navbar">
+                            <button class="button-header" id="menuButton2">
+                                <img src="All Contents/Icon/Menu-Box.jpeg" class="menubox">
+                            </button>
+                            <div id="menuBox2" class="menu-box">
+                                <div class="genres2">
+                                    <h4>Genres</h4>
+                                    <ul>
+                                        <li>Action and Adventure</li>
+                                        <li>Anime</li>
+                                        <li>Comedy</li>
+                                        <li>Documentary</li>
+                                        <li>Drama</li>
+                                        <li>Fantasy</li>
+                                        <li>Horror</li>
+                                        <li>Kids</li>
+                                    </ul>
+                                </div>
+                                <div class="featured">
+                                    <h4>Featured Collections</h4>
+                                    <ul>
+                                        <li>Home Premiere</li>
+                                        <li>New Releases</li>
+                                        <li>miniTV</li>
+                                        <li>Critically Acclaimed</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                        <button class="button-header" onclick="openSearchModal()">
+                            <img src="All Contents/Icon/seaarch2.png" id="searchPanel" class="search-btn">
+                        </button>
+
+                        <div class="profile-container" id="profileBtn">
+                            <img src="All Contents/Icon/acc1.png" class="profile-img" alt="Profile" width="40" height="40">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        
+            <!--Search Model-->
+            <div id="searchModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeSearchModal()">&times;</span>
+                    <input type="text" placeholder="Search..." class="search-input" onkeyup="showHint(this.value)">
+                    <div id="txtHint"></div> <!-- Container for search suggestions -->
+                </div>
+            </div>
+
+
+    <!--Profile model-->
+
+    <!-- Overlay Background -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Dropdown Menu -->
+    <div id="dropdownMenu" class="dropdown-menu">
+    <h3>Your Account</h3>
+    <div class="menu-item">
+    <img src="All Contents/Profile/seconfAcc.png" class="menu-img" alt="Sg Profile" width="20" height="20">
+    <span>Another Account</span>
+    </div>
+    <div class="menu-item">
+    <img src="All Contents/Profile/kidsimg.png" class="menu-img" alt="Kids Profile" width="20" height="20">
+    <span>Kids</span>
+    </div>
+    <div class="menu-item">
+        <img src="All Contents/Profile/Add.png" class="menu-img" alt="Kids Profile" width="20" height="20">
+        <span>Add Account</span>
+        </div>
+    <div class="menu-item">
+    <span>Account & Settings</span>
+    </div>
+    <div class="menu-item">
+    <span>Sign out</span>
+    </div>
+    <div class="menu-item">
+        <a href="account.html">
+        <span>
+            Account statistics
+            </span>
+        </a>
+        
+    </div>
+    </div>
+
+    <!--Hindi Movie Staring-->
+    <div class="container">
+        
+        <div class="scroll-container">
+            <div class="scroll-content">
+                <img src="All Contents/Hindi Movie/Main Image/mainImg.png" class="sizingImg-sty">
+            </div>
+        </div>
+        
+    </div>
+
+    <!--Hindi Movie-->
+    <div class="container">
+        <div class="section">
+            <h2 class="heading">Hindi Movie</h2>
+            <div class="grid">
+                <div class="Overflow">
+                    <div class="scroll-content">
+                        <div class="card">
+                            <img src="All Contents/Movie in Hindi/1-img.png" class="img-hg-wd">
+                            <p class="movie-heading">Stree</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Movie in Hindi/2-img.png" class="img-hg-wd">
+                            <p class="movie-heading">Kooki</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Movie in Hindi/3-img.png" class="img-hg-wd">
+                            <p class="movie-heading">Auron Main Kaha Dum Tha</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Movie in Hindi/4-img.png" class="img-hg-wd">
+                            <p class="movie-heading">Bad Newz</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Movie in Hindi/5-img.png" class="img-hg-wd">
+                            <p class="movie-heading">Chandu Champion</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Movie in Hindi/6-img.png" class="img-hg-wd">
+                            <p class="movie-heading">Rocky aur Rani</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Movie in Hindi/7-img.png" class="img-hg-wd">
+                            <p class="movie-heading">Singham</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Movie in Hindi/8-img.png" class="img-hg-wd">
+                            <p class="movie-heading">Middle Class Love</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Movie in Hindi/9-img.png" class="img-hg-wd">
+                            <p class="movie-heading">Ready</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Movie in Hindi/10-img.png" class="img-hg-wd">
+                            <p class="movie-heading">Maidaan</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Amazon Original Series-->
+    <div class="container">
+        <div class="section">
+            <h2 class="heading">Amazon Original Series</h2>
+            <div class="grid">
+                <div class="Overflow">
+                    <div class="scroll-content">
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Series/1.png" class="img-hg-wd movie-card">
+                            <p class="movie-heading">Follow Kar Lo Yaar</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Series/2.png" class="img-hg-wd">
+                            <p class="movie-heading">Mirzapur</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Series/3.png" class="img-hg-wd">
+                            <p class="movie-heading">Panchayat</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Series/4.png" class="img-hg-wd">
+                            <p class="movie-heading">Dil Dosti Dilemma</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Series/5.png" class="img-hg-wd">
+                            <p class="movie-heading">Big Girls Don't Cry</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Series/6.png" class="img-hg-wd">
+                            <p class="movie-heading">Love Storiyaan</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Series/7.png" class="img-hg-wd">
+                            <p class="movie-heading">Indian Police Force</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Series/8.png" class="img-hg-wd">
+                            <p class="movie-heading">Wedding.com</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Series/9.png" class="img-hg-wd">
+                            <p class="movie-heading">Flames</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Series/10.png" class="img-hg-wd">
+                            <p class="movie-heading">First Act</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Dub in Hindi-->
+    <div class="container">
+        <div class="section">
+            <h2 class="heading">Dubbed in Hindi</h2>
+            <div class="grid">
+                <div class="Overflow">
+                    <div class="scroll-content">
+                        <div class="card">
+                        
+                        <img src="All Contents/Hindi Movie/Dubb in Hindi/1.png" class="img-hg-wd">
+                        <p class="movie-heading">Don Jon</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Dubb in Hindi/2.png" class="img-hg-wd">
+                            <p class="movie-heading">Frinds with Benefits</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Dubb in Hindi/3.png" class="img-hg-wd">
+                            <p class="movie-heading">Jackpot</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Dubb in Hindi/4.png" class="img-hg-wd">
+                            <p class="movie-heading">Land Of Bad</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Dubb in Hindi/5.png" class="img-hg-wd">
+                            <p class="movie-heading">One Fast Move</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Dubb in Hindi/7.png" class="img-hg-wd">
+                            <p class="movie-heading">Imaginary</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Dubb in Hindi/8.png" class="img-hg-wd">
+                            <p class="movie-heading">Highway</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Dubb in Hindi/9.png" class="img-hg-wd">
+                            <p class="movie-heading">Wxorcism 13</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Dubb in Hindi/10.png" class="img-hg-wd">
+                            <p class="movie-heading">Warth Of Man</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Come-->
+    <div class="container">
+        <div class="section">
+            <h2 class="heading">IMBD Hindi Movie Top Rated</h2>
+            <div class="grid">
+                <div class="Overflow">
+                    <div class="scroll-content">
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Top Rated/1.png" class="img-hg-wd">
+                            <p class="movie-heading">Hera Pheri</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Top Rated/2.png" class="img-hg-wd">
+                            <p class="movie-heading">3 Idiots</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Top Rated/3.png" class="img-hg-wd">
+                            <p class="movie-heading">Pink</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Top Rated/4.png" class="img-hg-wd">
+                            <p class="movie-heading">Deewaar</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Top Rated/5.png" class="img-hg-wd">
+                            <p class="movie-heading">Sharmajee ki Beti</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Top Rated/6.png" class="img-hg-wd">
+                            <p class="movie-heading">Dil Chaahta Hi</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Top Rated/7.png" class="img-hg-wd">
+                            <p class="movie-heading">Chakde India</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Top Rated/8.png" class="img-hg-wd">
+                            <p class="movie-heading">Shershaan</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Top Rated/9.png" class="img-hg-wd">
+                            <p class="movie-heading">Lage Raho Munna Bhai</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Top Rated/10.png" class="img-hg-wd">
+                            <p class="movie-heading">Section 365</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Original Series-->
+    <div class="container">
+        <div class="section">
+            <h2 class="heading">Eros Now</h2>
+            <div class="grid">
+                <div class="Overflow">
+                    <div class="scroll-content">
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Eros Now/1.png" class="img-hg-wd">
+                            <p class="movie-heading">HinduMata</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Eros Now/2.png" class="img-hg-wd">
+                            <p class="movie-heading">Modi Seson 2</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Eros Now/3.png" class="img-hg-wd">
+                            <p class="movie-heading">A Viral Wedding</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Eros Now/4.png" class="img-hg-wd">
+                            <p class="movie-heading">Love Aaj Kal</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Eros Now/5.png" class="img-hg-wd">
+                            <p class="movie-heading">Enaaya All Episode</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Eros Now/6.png" class="img-hg-wd">
+                            <p class="movie-heading">Rockstar</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Eros Now/7.png" class="img-hg-wd">
+                            <p class="movie-heading">Thoda Adjust Please</p>
+
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Eros Now/8.png" class="img-hg-wd">
+                            <p class="movie-heading">Always Kabhi Ksbhi</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Eros Now/9.png" class="img-hg-wd">
+                            <p class="movie-heading">Ajab Singh Ki Gazab Kahani</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Hindi Movie/Eros Now/10.png" class="img-hg-wd">
+                            <p class="movie-heading">Ramleela</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Crunchyroll: Most Propular-->
+    <div class="container">
+        <div class="section">
+            <h2 class="heading">Mini- Tv</h2>
+            <div class="grid">
+                <div class="Overflow">
+                    <div class="scroll-content">
+                        <div class="card">
+                            <img src="All Contents/Mini TV IMG/1.png" class="img-hg-wd">
+                            <p class="movie-heading">Yeh Meri Family</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Mini TV IMG/2.png" class="img-hg-wd">
+                            <p class="movie-heading">Jamnapaar</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Mini TV IMG/3.png" class="img-hg-wd">
+                            <p class="movie-heading">Naam Namak Nishan</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Mini TV IMG/4.png" class="img-hg-wd">
+                            <p class="movie-heading">Highway Love</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Mini TV IMG/5.png" class="img-hg-wd">
+                            <p class="movie-heading">Sisterhood</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Mini TV IMG/6.png" class="img-hg-wd">
+                            <p class="movie-heading">The Adeventure Of LLEO</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Mini TV IMG/7.png" class="img-hg-wd">
+                            <p class="movie-heading">Chacha Vidhayak Hai Humare</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Mini TV IMG/8.png" class="img-hg-wd">
+                            <p class="movie-heading">Half CA</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Mini TV IMG/9.png" class="img-hg-wd">
+                            <p class="movie-heading">Hustlers</p>
+                        </div>
+                        <div class="card">
+                            <img src="All Contents/Mini TV IMG/10.png" class="img-hg-wd">
+                            <p class="movie-heading">Hack Crime Online</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Main-image.js"></script>
+    <script src="search-work.js"></script>
+    <script src="menudrop.js"></script>
+    <script src="profile.js"></script>
+    </body>
+    </html>
